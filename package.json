@@ -1,0 +1,17 @@
+{
+  "name": "01-socket-server-basic",
+  "version": "1.0.0",
+  "description": "Udemy course about socket.io with ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Diego Carrillo",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "socket.io": "^4.4.1"
+  }
+}
