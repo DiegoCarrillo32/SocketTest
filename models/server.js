@@ -7,6 +7,7 @@ const socketio = require('socket.io');
 
 const Sockets = require('./sockets');
 const path = require('path');
+const cors = require('cors');
 
 class Server {
     constructor() {
@@ -35,6 +36,7 @@ class Server {
     middleware(){
         //Despegar el directorio publico
         this.app.use(express.static(path.resolve(__dirname, '../public')));
+        this.app.use(cors())
 
     }
 
