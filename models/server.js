@@ -6,6 +6,7 @@ const http = require('http')
 const socketio = require('socket.io');
 
 const Sockets = require('./sockets');
+const path = require('path');
 
 class Server {
     constructor() {
@@ -33,7 +34,7 @@ class Server {
 
     middleware(){
         //Despegar el directorio publico
-        this.app.use(express.static('/Users/kosti/Documents/Coding/ReactSocketsCourse/01-socket-server-basic/public'));
+        this.app.use(express.static(path.resolve(__dirname, '../public')));
 
     }
 
